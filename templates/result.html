@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Result </title>
+{% endblock %}
+
+{% block body %}
+
+<h1> The shortened URL is: </h1><br>
+<input value={{ url_for('index', _external=True) + short}} size=150> <br>
+
+<a href={{ url_for('index') }}>Shorten another URL</a>
+{% endblock %}

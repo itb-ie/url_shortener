@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>URL Shortener </title>
+{% endblock %}
+
+{% block body %}
+
+<h1> Welcome to URL shortener </h1>
+
+<form action="/", method="POST">
+    <label for="curl" placeholder="Enter URL">Please Enter The URL to Shorten</label>
+    <input name="url" type="text" id="curl" size="150">
+    <input type="submit" value="Shorten Me!">
+</form>
+{% endblock %}
